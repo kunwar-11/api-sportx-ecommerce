@@ -7,9 +7,12 @@ const {addProductToDb} = require('./models/product.model')
 const {addUserToDb} = require('./models/user.model')
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
+require('dotenv').config()
 const app = express()
 app.use(bodyParser.json())
-const PORT = 3000
+app.use(cors())
+const PORT = process.env.PORT || 8000
 
 initalizeConnection()
 //addProductToDb()  to be added only once
