@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 8000
 
 initalizeConnection()
 //addProductToDb()  to be added only once
-//addUserToDb();
+// addUserToDb();
 app.use('/products' , products)
 app.use('/cart' , cart)
 app.use('/wishlist',wishlist)

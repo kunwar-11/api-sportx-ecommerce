@@ -10,8 +10,8 @@ router.route('/')
             res.json({success : false , message : 'cannot fetch products! please try again later'})
         }
     })
-router.param('productId' , (req , res , next , productId) => {
-    const product = products.find(each => each.id === productId)
+router.param('productId' , async (req , res , next , productId) => {
+    const product = await Product.findById(productId)
     if(!product) {
         return res.status(400).json({success : false , message : 'product not found'})
     }
