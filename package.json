@@ -1,0 +1,22 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Rishabh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dot-env": "0.0.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.7"
+  }
+}
